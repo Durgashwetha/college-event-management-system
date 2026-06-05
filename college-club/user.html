@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="navbar">
+
+        <h2>🎉 Campus Events</h2>
+
+        <button onclick="toggleDarkMode()">
+            Dark Mode
+        </button>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Search Events..."
+        onkeyup="loadEvents()">
+
+    </div>
+
+    <div
+    id="events"
+    class="events-grid">
+    </div>
+
+</div>
+
+<script src="user.js"></script>
+
+</body>
+</html>

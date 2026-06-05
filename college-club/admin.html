@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="navbar">
+
+        <h2>🎓 Event Management System</h2>
+
+        <a href="user.html">
+            View Events
+        </a>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Total Events</h3>
+            <h1 id="totalEvents">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Total Registrations</h3>
+            <h1 id="totalRegistrations">0</h1>
+        </div>
+
+    </div>
+
+    <div class="form-container">
+
+        <h2>Create New Event</h2>
+
+        <input id="title" placeholder="Event Title">
+
+        <textarea id="desc"
+        placeholder="Event Description"></textarea>
+
+        <input id="poster"
+        placeholder="Poster Image URL">
+
+        <input id="date" type="date">
+
+        <input id="time" type="time">
+
+        <input id="limit"
+        type="number"
+        placeholder="Registration Limit">
+
+        <input id="form"
+        placeholder="Google Form Link">
+
+        <button onclick="addEvent()">
+            Add Event
+        </button>
+
+    </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
